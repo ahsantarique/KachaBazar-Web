@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.springframework.org/security/tags">
+
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="robots" content="all,follow"/>
+    <meta name="googlebot" content="index,follow,snippet,archive"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Obaju e-commerce template"/>
+    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz"/>
+    <meta name="keywords" content=""/>
+
+    <title>
+        Obaju : e-commerce template
+    </title>
+
+    <meta name="keywords" content=""/>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' th:href="@{'http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100'}" rel='stylesheet' type='text/css'/>
+
+    <!-- styles -->
+    <link href="../static/assets/css/font-awesome.css" th:href="@{assets/css/font-awesome.css}" rel="stylesheet"/>
+    <link href="../static/assets/css/bootstrap.min.css" th:href="@{assets/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link href="../static/assets/css/animate.min.css" th:href="@{assets/css/animate.min.css}" rel="stylesheet"/>
+    <link href="../static/assets/css/owl.carousel.css" th:href="@{assets/css/owl.carousel.css}" rel="stylesheet"/>
+    <link href="../static/assets/css/owl.theme.css" th:href="@{assets/css/owl.theme.css}" rel="stylesheet"/>
+
+    <!-- theme stylesheet -->
+    <link href="../static/assets/css/style.default.css" th:href="@{assets/css/style.default.css}" rel="stylesheet" id="theme-stylesheet"/>
+
+    <!-- your stylesheet with modifications -->
+    <link href="../static/assets/css/custom.css" th:href="@{assets/css/custom.css}" rel="stylesheet"/>
+
+    <script src="../static/assets/js/respond.min.js" th:src="@{assets/js/respond.min.js}"></script>
+
+    <link rel="shortcut icon" href="../static/assets/favicon.png" th:href="@{assets/favicon.png}"/>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<!-- *** TOPBAR ***
+_________________________________________________________ -->
+<div th:replace="fragments/top-bar :: topbar">Top Bar</div>
+
+<!-- *** TOP BAR END *** -->
+
+<!-- *** NAVBAR ***
+_________________________________________________________ -->
+
+<div th:replace="fragments/top-nav :: topnav">Nav bar Bar</div>
+
+<!-- *** NAVBAR END *** -->
+<div id="all">
+
+
+    <div id="content">
+        <div class="container">
+
+
+            <div class="col-md-12">
+
+                <ul class="breadcrumb">
+                    <li><a href="#">Home</a>
+                    </li>
+                    <li>New account / Sign in</li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="box">
+                    <h1>New account</h1>
+
+                    <p class="lead">Not our registered customer yet?</p>
+                    <p>With registration with us new world of fashion, fantastic discounts and much more opens to you! The whole process will not take you more than a minute!</p>
+                    <p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>
+
+                    <hr/>
+
+                    <form action="#" th:action="@{/join-as-customer}"  method="post">
+                        <div class="form-group">
+                            <label >Name</label>
+                            <input type="text" class="form-control"  name="name"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label >Addess</label>
+                            <textarea rows="5" class="form-control"  name="address" > </textarea>
+                        </div>
+                        <div class="form-group">
+                            <label >Email</label>
+                            <input type="text" class="form-control"  name="username"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control"  name="password"/>
+                        </div>
+                        <div class="form-group">
+                            <label >Confirm Password</label>
+                            <input type="password" class="form-control"  name="confirmPassword"/>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="box">
+                    <h1>Bring your business online</h1>
+
+                    <p class="lead">Your valuable business not online yet?</p>
+                    <p>With registration with us new world of fashion, fantastic discounts and much more opens to you! The whole process will not take you more than a minute!</p>
+                    <p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>
+
+                    <hr/>
+
+                    <form action="#" th:action="@{/open-your-shop}"  method="post">
+                        <div class="form-group">
+                            <label >Name of your shop</label>
+                            <input type="text" class="form-control"  name="name"/>
+                        </div>
+                        <div class="form-group">
+                            <label >Business type </label>
+                            <select class="form-control"  name="type">
+                                <option value="Restaurant">Restaurant</option>
+                                <option value="Hotel">Hotel</option>
+                                <option value="Grocery">Grocery</option>
+                                <option value="To Let">To Let</option>
+                                <option value="Fashion">Fashion</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label >Addess</label>
+                            <textarea rows="5" class="form-control"  name="address" > </textarea>
+                        </div>
+                        <div class="form-group">
+                            <label >Email</label>
+                            <input type="text" class="form-control" name="username"/>
+                        </div>
+                        <div class="form-group">
+                            <label >Password</label>
+                            <input type="password" class="form-control"  name="password"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" class="form-control"   name="confirmPassword"/>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#content -->
+
+    <!-- *** footer ***
+    _________________________________________________________ -->
+    <div th:replace="fragments/footer :: footer">Footer</div>
+
+    <!-- *** footer*** -->
+
+
+    <!-- *** footer ***
+    _________________________________________________________ -->
+    <div th:replace="fragments/copyright :: copyright">Copyright</div>
+
+    <!-- *** footer*** -->
+
+
+
+
+</div>
+
+
+
+
+<!-- *** SCRIPTS TO INCLUDE ***
+_________________________________________________________ -->
+<script src="../static/assets/js/jquery-1.11.0.min.js" th:src="@{assets/js/jquery-1.11.0.min.js}"></script>
+<script src="../static/assets/js/bootstrap.min.js" th:src="@{assets/js/bootstrap.min.js}"></script>
+<script src="../static/assets/js/jquery.cookie.js" th:src="@{assets/js/jquery.cookie.js}"></script>
+<script src="../static/assets/js/waypoints.min.js" th:src="@{assets/js/waypoints.min.js}"></script>
+<script src="../static/assets/js/modernizr.js" th:src="@{assets/js/modernizr.js}"></script>
+<script src="../static/assets/js/bootstrap-hover-dropdown.js" th:src="@{assets/js/bootstrap-hover-dropdown.js}"></script>
+<script src="../static/assets/js/owl.carousel.min.js" th:src="@{assets/js/owl.carousel.min.js}"></script>
+<script src="../static/assets/js/front.js" th:src="@{assets/js/front.js}"></script>
+
+</body>
+
+</html>

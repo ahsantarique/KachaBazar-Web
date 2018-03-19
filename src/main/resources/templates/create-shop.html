@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="robots" content="all,follow"/>
+    <meta name="googlebot" content="index,follow,snippet,archive"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Obaju e-commerce template"/>
+    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz"/>
+    <meta name="keywords" content=""/>
+
+    <title>
+        Obaju : e-commerce template
+    </title>
+
+    <meta name="keywords" content=""/>
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" th:href="@{assets/global/plugins/font-awesome/css/font-awesome.min.css}" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" th:href="@{assets/global/plugins/simple-line-icons/simple-line-icons.min.css}" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" th:href="@{assets/global/plugins/bootstrap/css/bootstrap.min.css}" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" th:href="@{assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css}" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" th:href="@{assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css}" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/morris/morris.css" th:href="@{assets/global/plugins/morris/morris.css}" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/fullcalendar/fullcalendar.min.css" th:href="@{assets/global/plugins/fullcalendar/fullcalendar.min.css}" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/plugins/jqvmap/jqvmap/jqvmap.css" th:href="@{assets/global/plugins/jqvmap/jqvmap/jqvmap.css}" rel="stylesheet" type="text/css" />
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="../assets/global/css/components.min.css" th:href="@{assets/global/css/components.min.css}" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="../assets/global/css/plugins.min.css" th:href="@{assets/global/css/plugins.min.css}" rel="stylesheet" type="text/css" />
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="../assets/layouts/layout2/css/layout.min.css" th:href="@{assets/layouts/layout2/css/layout.min.css}" rel="stylesheet" type="text/css" />
+    <link href="../assets/layouts/layout2/css/themes/blue.min.css" th:href="@{assets/layouts/layout2/css/themes/blue.min.css}" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="../assets/layouts/layout2/css/custom.min.css" th:href="@{assets/layouts/layout2/css/custom.min.css}" rel="stylesheet" type="text/css" />
+    <!-- END THEME LAYOUT STYLES -->
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' th:href="@{'http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100'}" rel='stylesheet' type='text/css'/>
+
+    <!-- styles -->
+    <link href="../static/assets/css/font-awesome.css" th:href="@{assets/css/font-awesome.css}" rel="stylesheet"/>
+    <link href="../static/assets/css/bootstrap.min.css" th:href="@{assets/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link href="../static/assets/css/animate.min.css" th:href="@{assets/css/animate.min.css}" rel="stylesheet"/>
+    <link href="../static/assets/css/owl.carousel.css" th:href="@{assets/css/owl.carousel.css}" rel="stylesheet"/>
+    <link href="../static/assets/css/owl.theme.css" th:href="@{assets/css/owl.theme.css}" rel="stylesheet"/>
+
+    <!-- theme stylesheet -->
+    <link href="../static/assets/css/style.default.css" th:href="@{assets/css/style.default.css}" rel="stylesheet" id="theme-stylesheet"/>
+
+    <!-- your stylesheet with modifications -->
+    <link href="../static/assets/css/custom.css" th:href="@{assets/css/custom.css}" rel="stylesheet"/>
+
+    <script src="../static/assets/js/respond.min.js" th:src="@{assets/js/respond.min.js}"></script>
+
+    <link rel="shortcut icon" href="../static/assets/favicon.png" th:href="@{assets/favicon.png}"/>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+<!-- *** TOPBAR ***
+_________________________________________________________ -->
+<div th:replace="fragments/top-bar :: topbar">Top Bar</div>
+
+<!-- *** TOP BAR END *** -->
+
+<!-- *** NAVBAR ***
+_________________________________________________________ -->
+
+<!--<div th:replace="fragments/top-nav :: topnav">Nav bar Bar</div>-->
+<div th:replace="fragments/metronic-top-menu :: top-menu">metronic top menu</div>
+
+<!-- *** NAVBAR END *** -->
+<div id="all">
+
+
+    <div id="content">
+        <div class="container">
+
+
+            <div class="col-md-12">
+
+                <ul class="breadcrumb">
+                    <li><a href="#">Home</a>
+                    </li>
+                    <li>New account / Sign in</li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="box">
+                    <img src="../static/assets/big-log.png" th:src="@{assets/big-log.png}" alt="Obaju logo"  height="160" width="100%"/>
+
+                <img src="../static/assets/ad.png" th:src="@{assets/ad.png}" alt="Obaju logo"  width="100%"/>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box">
+                    <h1>New account</h1>
+
+                    <p class="lead">Not our registered customer yet?</p>
+                    <p>With registration with us new world of fashion, fantastic discounts and much more opens to you! The whole process will not take you more than a minute!</p>
+                    <p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>
+
+                    <hr/>
+
+                    <form action="#" th:action="@{/open-your-shop}"  method="post">
+                        <div class="form-group">
+                            <label for="name">Name of your shop</label>
+                            <input type="text" class="form-control" id="name" th:value="${shop.name}" name="name"/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Addess</label>
+                            <textarea rows="5" class="form-control" id="address" th:value="${shop.address}" name="address" > </textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailOrPhone">Email</label>
+                            <input type="text" class="form-control" id="emailOrPhone" th:value="${user.email}" name="email"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" th:value="${user.password}" name="password"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password" th:value="${user.password}" name="confirmPassword"/>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-user-md"></i> Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#content -->
+
+<!-- *** footer ***
+_________________________________________________________ -->
+<div th:replace="fragments/footer :: footer">Footer</div>
+
+<!-- *** footer*** -->
+
+
+<!-- *** footer ***
+_________________________________________________________ -->
+<div th:replace="fragments/copyright :: copyright">Copyright</div>
+
+<!-- *** footer*** -->
+
+
+
+
+</div>
+
+
+
+
+<!-- *** SCRIPTS TO INCLUDE ***
+_________________________________________________________ -->
+<script src="../static/assets/js/jquery-1.11.0.min.js" th:src="@{assets/js/jquery-1.11.0.min.js}"></script>
+<script src="../static/assets/js/bootstrap.min.js" th:src="@{assets/js/bootstrap.min.js}"></script>
+<script src="../static/assets/js/jquery.cookie.js" th:src="@{assets/js/jquery.cookie.js}"></script>
+<script src="../static/assets/js/waypoints.min.js" th:src="@{assets/js/waypoints.min.js}"></script>
+<script src="../static/assets/js/modernizr.js" th:src="@{assets/js/modernizr.js}"></script>
+<script src="../static/assets/js/bootstrap-hover-dropdown.js" th:src="@{assets/js/bootstrap-hover-dropdown.js}"></script>
+<script src="../static/assets/js/owl.carousel.min.js" th:src="@{assets/js/owl.carousel.min.js}"></script>
+<script src="../static/assets/js/front.js" th:src="@{assets/js/front.js}"></script>
+
+
+<!-- BEGIN CORE PLUGINS -->
+<script src="../assets/global/plugins/jquery.min.js" th:src="@{assets/global/plugins/jquery.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" th:src="@{assets/global/plugins/bootstrap/js/bootstrap.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/js.cookie.min.js" th:src="@{assets/global/plugins/js.cookie.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" th:src="@{assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery.blockui.min.js" th:src="@{assets/global/plugins/jquery.blockui.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" th:src="@{assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js}"  type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="../assets/global/plugins/moment.min.js" th:src="@{assets/global/plugins/moment.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" th:src="@{assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/morris/morris.min.js" th:src="@{assets/global/plugins/morris/morris.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/morris/raphael-min.js" th:src="@{assets/global/plugins/morris/raphael-min.js}"  type="text/javascript"></script>
+<script src="../assets/global/plugins/counterup/jquery.waypoints.min.js" th:src="@{assets/global/plugins/counterup/jquery.waypoints.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/counterup/jquery.counterup.min.js" th:src="@{assets/global/plugins/counterup/jquery.counterup.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/amcharts/amcharts/amcharts.js" th:src="@{assets/global/plugins/amcharts/amcharts/amcharts.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/amcharts/amcharts/serial.js" th:src="@{assets/global/plugins/amcharts/amcharts/serial.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/amcharts/amcharts/pie.js" th:src="@{assets/global/plugins/amcharts/amcharts/pie.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/amcharts/amcharts/radar.js" th:src="@{assets/global/plugins/amcharts/amcharts/radar.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/amcharts/amcharts/themes/light.js" th:src="@{assets/global/plugins/amcharts/amcharts/themes/light.js}"  type="text/javascript"></script>
+<script src="../assets/global/plugins/amcharts/amcharts/themes/patterns.js" th:src="@{assets/global/plugins/amcharts/amcharts/themes/patterns.js}"  type="text/javascript"></script>
+<script src="../assets/global/plugins/amcharts/amcharts/themes/chalk.js" th:src="@{assets/global/plugins/amcharts/amcharts/themes/chalk.js}"  type="text/javascript"></script>
+<script src="../assets/global/plugins/amcharts/ammap/ammap.js" th:src="@{assets/global/plugins/amcharts/ammap/ammap.js}"  type="text/javascript"></script>
+<script src="../assets/global/plugins/amcharts/ammap/maps/js/worldLow.js" th:src="@{assets/global/plugins/amcharts/ammap/maps/js/worldLow.js}"  type="text/javascript"></script>
+<script src="../assets/global/plugins/amcharts/amstockcharts/amstock.js" th:src="@{assets/global/plugins/amcharts/amstockcharts/amstock.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/fullcalendar/fullcalendar.min.js" th:src="@{assets/global/plugins/fullcalendar/fullcalendar.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/horizontal-timeline/horizontal-timeline.js" th:src="@{assets/global/plugins/horizontal-timeline/horizontal-timeline.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/flot/jquery.flot.min.js" th:src="@{assets/global/plugins/flot/jquery.flot.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/flot/jquery.flot.resize.min.js" th:src="@{assets/global/plugins/flot/jquery.flot.resize.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/flot/jquery.flot.categories.min.js" th:src="@{assets/global/plugins/flot/jquery.flot.categories.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" th:src="@{assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery.sparkline.min.js" th:src="@{assets/global/plugins/jquery.sparkline.min.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" th:src="@{assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js" th:src="@{assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.russia.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" th:src="@{assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js" th:src="@{assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.europe.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js" th:src="@{assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.germany.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js" th:src="@{assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.usa.js}" type="text/javascript"></script>
+<script src="../assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" th:src="@{assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js}" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN THEME GLOBAL SCRIPTS -->
+<script src="../assets/global/scripts/app.min.js" th:src="@{assets/global/scripts/app.min.js}" type="text/javascript"></script>
+<!-- END THEME GLOBAL SCRIPTS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="../assets/pages/scripts/dashboard.min.js" th:src="@{assets/pages/scripts/dashboard.min.js}" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<!-- BEGIN THEME LAYOUT SCRIPTS -->
+<script src="../assets/layouts/layout2/scripts/layout.min.js" th:src="@{assets/layouts/layout2/scripts/layout.min.js}"  type="text/javascript"></script>
+<script src="../assets/layouts/layout2/scripts/demo.min.js" th:src="@{assets/layouts/layout2/scripts/demo.min.js}" type="text/javascript"></script>
+<script src="../assets/layouts/global/scripts/quick-sidebar.min.js" th:src="@{assets/layouts/global/scripts/quick-sidebar.min.js}" type="text/javascript"></script>
+<script src="../assets/layouts/global/scripts/quick-nav.min.js" th:src="@{assets/layouts/global/scripts/quick-nav.min.js}" type="text/javascript"></script>
+<!-- END THEME LAYOUT SCRIPTS -->
+<script>
+    $(document).ready(function()
+    {
+        $('#clickmewow').click(function()
+        {
+            $('#radio1003').attr('checked', 'checked');
+        });
+    })
+</script>
+<!-- Google Code for Universal Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','../../../../../www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-37564768-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<!-- End -->
+</body>
+
+</html>

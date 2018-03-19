@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<div class="col-md-12" th:fragment="mainslider">
+    <div id="main-slider">
+        <div class="item">
+            <img src="../../static/assets/img/main-slider1.jpg" th:src="@{assets/img/main-slider1.jpg}" alt="" class="img-responsive"/>
+        </div>
+        <div class="item">
+            <img class="img-responsive" src="../../static/assets/img/main-slider2.jpg"  th:src="@{assets/img/main-slider2.jpg}" alt=""/>
+        </div>
+        <div class="item">
+            <img class="img-responsive" src="../../static/assets/img/main-slider3.jpg" th:src="@{assets/img/main-slider3.jpg}" alt=""/>
+        </div>
+        <div class="item">
+            <img class="img-responsive" src="../../static/assets/img/main-slider4.jpg" th:src="@{assets/img/main-slider4.jpg}" alt=""/>
+        </div>
+    </div>
+    <label class="btn btn-default">
+        Browse <input type="file" />
+    </label>
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Example file input</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1"/>
+        </div>
+    </form>
+    <!-- /#main-slider -->
+</div>
+</body>
+</html>
